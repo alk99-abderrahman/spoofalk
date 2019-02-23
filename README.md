@@ -33,7 +33,7 @@ en termux and wait until it done installing
 type on termux :
      ```
         pkg install tsu
-        pkg install git
+        
         exit
         exit
      ```
@@ -74,7 +74,7 @@ and open termux and type:   #(now the server must be started and the client must
 
 
 
-
+test1
 
 
 
