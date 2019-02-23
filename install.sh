@@ -20,7 +20,7 @@ echo "intalling iptables....";
 echo "what is the type of your processor ?" ;
 printf "   1)ARM \n   2)ARM_V7 " ;
 read input ;
-echo "intalling iptables...."; && sleep 0.1;
+echo "intalling iptables....";  sleep 0.1;
 if  [[ $input == "1" ]] ; then { cd iptablesall/armeabi/ ; cp iptables /data/data/com.termux/files/usr/bin/   ;chmod 7777 data/data/com.termux/files/usr/bin/iptables; cd .. ; cd .. ; 
 }
 elif [[ $input == "2" ]] ; then { cd /iptablesall/armv7/ ; cp iptables /data/data/com.termux/files/usr/bin/  ; chmod 7777 data/data/com.termux/files/usr/bin/iptables;cd .. ; cd .. ;
@@ -31,8 +31,11 @@ chmod 7777 spoofalk.sh /data/data/com.termux/files/home/spoofalk.sh ;
 echo "iptables copy done ok!" && sleep 2
 echo "installing packages ...." ;
 echo instaling<spoofalk>......... && sleep 3 ;
+chmod 7777 /data/data/com.termux/files/usr/bin/iptables ;
+chmod 7777 /data/data/com.termux/files/home/spoofalk/ettercap/* ;
 echo "packages status => ok !;" && sleep 2 ;
 echo install = donne  ready to use && sleep 2 ;
+printf "to open the app just type\n tsu \n bash spoofalk.sh"
 
 #spoofalk-evil-twin-on-andoid-v2 Copyright (C) 2019 by abderrahman
 #
